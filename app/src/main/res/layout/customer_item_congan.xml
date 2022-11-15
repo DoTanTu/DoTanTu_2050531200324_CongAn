@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_police"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:src="@drawable/policy"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="20dp"
+       android:orientation="vertical"
+       >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <TextView
+                  android:id="@+id/name_police"
+                  android:layout_alignParentStart="true"
+                  android:layout_alignParentLeft="true"
+                  android:textColor="@color/black"
+                  android:textSize="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Ten Công an"
+                  />
+              <TextView
+                  android:id="@+id/country_police"
+                  android:layout_alignParentEnd="true"
+                  android:layout_width="wrap_content"
+                  app:layout_constraintRight_toLeftOf=""
+                  android:layout_height="wrap_content"
+                  android:text="quốc gia"
+                  android:textSize="20dp"
+                  android:layout_marginRight="20dp"
+                  />
+          </RelativeLayout>
+      </LinearLayout>
+       <TextView
+           android:id="@+id/rank"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18dp"
+           android:text="cấp bậc"/>
+       <TextView
+           android:id="@+id/work_place"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="18dp"
+           android:text="Noi cong tac"
+           />
+   </LinearLayout>
+</LinearLayout>
